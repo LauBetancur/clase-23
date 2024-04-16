@@ -34,7 +34,7 @@ const render = async () => {
   const productos = await obtenerProductos();
 
   for (const producto of productos) {
-    crearProducto(producto.id, producto.title, producto.image, producto.price);
+    crearProducto(producto.id, producto.name, producto.image, producto.price);
   }
 };
 
